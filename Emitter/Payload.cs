@@ -1,8 +1,12 @@
-﻿using System.Diagnostics;
-using System.Net;
+﻿using System.Collections;
+using System;
+using System.Diagnostics;
 using System.Net.Sockets;
+using System.Net;
 using System.Security.Cryptography;
 using System.Xml.Linq;
+using System.Linq;
+using System.IO;
 
 //This is an example payload
 public class LibClass

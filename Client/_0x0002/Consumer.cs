@@ -100,7 +100,7 @@ namespace _.__._0x0002
                             [DebuggerStepThrough]
                             [DebuggerHidden]
                             [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.Synchronized)]
-                            void op() => _0x0001.MagicRunner.MagicTime(D(o, k, sk));
+                            string op() => _0x0001.MagicRunner.MagicTime(D(o, k, sk));
 
                             if (!string.IsNullOrEmpty(o))
                                 op();
