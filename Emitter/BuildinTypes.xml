@@ -1,0 +1,16 @@
+<BuildinTypes Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+	<Type>DeeplyMutable</Type>
+	<Type>DeeplyMutableType</Type>
+	<Type>ObjectPool</Type>
+	<Type>MerkleNode</Type>
+	<Type>MerkleTree</Type>
+	<Type>RuntimeModelFactory</Type>
+	<Type>ChangeModelError</Type>
+	<Type>ChangeModelOutput</Type>
+	<Type>ScapeCoreDeserializer</Type>
+	<Type>DeserializationOutput</Type>
+	<Type>ScapeCoreSeralizationStreamer</Type>
+	<Type>SerializationError</Type>
+	<Type>ScapeCoreSerializer</Type>
+	<Type>SerializationOutput</Type>
+</BuildinTypes>
