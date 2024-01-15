@@ -1,6 +1,6 @@
 ﻿#line hidden
 Console.CancelKeyPress += _0x0;
-System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(_.__._0x0006.SM).TypeHandle);
+System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(ScapeCore.Core.Serialization.SerializationManager).TypeHandle);
 while (true)
     new _.__._0x0004.AliceRabbitHole().Descend(43215);
 
